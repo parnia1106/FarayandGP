@@ -1,0 +1,81 @@
+nav {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  width: 500px !important;
+}
+
+nav .brand-logo {
+  color: rgba(10, 36, 95, 0.842) !important;
+  font-size: 16px !important;
+  margin-left: 10px;
+}
+
+nav .sidenav-trigger i {
+  color: rgba(10, 36, 95, 0.842) !important;
+}
+
+nav .nav-wrapper {
+  background-color: white !important;
+}
+
+nav .hide-on-med-and-down {
+  margin-left: 100px !important;
+}
+
+nav .hide-on-med-and-down a {
+  color: rgba(10, 36, 95, 0.842) !important;
+  font-size: 16px !important;
+  padding-left: 35px !important;
+}
+
+nav .hide-on-med-and-down a:hover {
+  background-color: white !important;
+  color: #699dee !important;
+}
+
+.container .pic1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.intro-text {
+  position: relative;
+  left: 60px;
+  -webkit-transform: translate(-10%, 30%);
+          transform: translate(-10%, 30%);
+  font-size: 24px;
+  color: rgba(10, 36, 95, 0.842);
+}
+
+.intro-text p:nth-child(2) {
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+.intro-text p:nth-child(3) {
+  margin-left: 25px;
+  margin-bottom: 40px;
+}
+
+.intro-text p:nth-child(4) {
+  margin-left: 70px;
+}
+
+.intro-text p:nth-child(4) i {
+  color: #ecad1a;
+  font-weight: bold;
+}
+
+.intro-text p:nth-child(4) i u {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #707d9b;
+          text-decoration-color: #707d9b;
+}
+
+.btn {
+  background-color: #ecad1a !important;
+  border-radius: 18px !important;
+  margin: 130px;
+}
+/*# sourceMappingURL=main.css.map */

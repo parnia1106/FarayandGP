@@ -1,0 +1,82 @@
+$main_text_color1: rgba(10, 36, 95, 0.842);
+$main_text_color2: rgb(236, 173, 26);
+
+
+nav{
+    box-shadow: none !important;
+    width: 500px !important;
+    .brand-logo{
+        color: $main_text_color1 !important;
+        font-size: 16px !important;
+        margin-left: 10px;
+    }
+
+    .sidenav-trigger{
+        i{
+            color: $main_text_color1 !important;
+        }
+    }
+
+    .nav-wrapper{
+        background-color: white !important;
+    }
+
+    .hide-on-med-and-down{
+        margin-left: 100px !important;
+        a{
+            color: $main_text_color1 !important;
+            font-size: 16px !important;
+            padding-left: 35px !important;
+            &:hover{
+                background-color: white !important;
+                color: rgb(105,157,238) !important;
+            }
+        }
+     }    
+}
+
+.container{
+   .pic1{
+       position: absolute;
+       right: 0;
+       top:0;
+   }
+}
+
+
+    
+
+.intro-text{
+    position: relative;
+    left:60px;
+	transform: translate(-10%, 30%);
+    font-size: 24px;
+    color: $main_text_color1;
+        p:nth-child(2){
+            margin-top: 30px;
+            margin-left: 25px;
+        }
+    
+        p:nth-child(3){
+            margin-left: 25px;
+            margin-bottom: 40px;;
+        }
+    
+        p:nth-child(4){
+            margin-left: 70px;
+            i{
+                color: $main_text_color2;
+                font-weight: bold;
+                u{
+                    text-decoration: underline;
+                    text-decoration-color:  rgb(112, 125, 155);
+                }
+            }
+        }
+    }
+
+.btn{
+    background-color: $main_text_color2 !important;
+    border-radius: 18px !important;
+    margin: 130px;
+}
