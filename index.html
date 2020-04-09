@@ -4,47 +4,219 @@
 		<title>Farayand Group</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="materialize/css/materialize.min.css">
 		<link rel="shortcut icon" type="image/x-icon" href="./Img/title-icon.png" />
 		<link href="css/main.css" rel="stylesheet">
 	</head>
 	<body>
 
-		<nav>
+		<nav id="nav">
 			<div class="nav-wrapper">
-			  <a href="#" class="brand-logo"><img src="Img/photo_2020-04-02_00-14-36.jpg" width="70px" height="70px"></a>
+			  <a href="index.html" class="brand-logo"><img src="Img/icon.jpg" width="70px" height="70px" title="Farayand Group"></a>
 			  <a href="#" data-target='mobile-demo' class="sidenav-trigger"><i class="material-icons">menu</i></a>
-         	  <ul class="hide-on-med-and-down">
-         		  <li class="waves-effect"><a href="#">About Us</a></li>
-          		  <li class="waves-effect"><a href="#">Contact Us</a></li>
+         	  <ul class="hide-on-med-and-down nav-con">
+         		  <li><a href="#aboutUs">About Us</a></li>
+          		  <li><a href="#contactUs">Contact Us</a></li>
        		  </ul>
       	      <ul class="sidenav" id="mobile-demo">
-        	      <li><a href="#">About Us</a></li>
-        	      <li><a href="#">Contact Us</a></li>
+        	      <li><a href="#aboutUs">About Us</a></li>
+        	      <li><a href="#contactUs">Contact Us</a></li>
        		  </ul>
 			</div>
 		  </nav>
 
+
 		<div class="container">
 
-			<img src="Img/Pic 1.png" class="hide-on-med-and-down pic1">
-			
-			<div class="intro-text">
-				<p>Hi,</p>
-				<p>We are a small team</p>
-				<p>with lots of hope :)</p>
-				<p>We are <i><u>FARAYAND Group</u></i></p>
-			</div>
-		
-			<div class="btn waves-effect">more about us</div>
+			<div class="fade item">
+				<img src="Img/Pic 1.png" class="pic1">
 				
+				
+				<div class="intro-text">
+					<p>Hi,</p>
+					<p>We are a small team</p>
+					<p>with lots of hope :)</p>
+					<p>We are <i><u>FARAYAND Group</u></i></p>
+				</div>
 			
+				<a href="#aboutUs">	<div class="btn waves-effect pulse" id="intro-btn">more about us</div></a>
+					
+				<ul class="sm-icon">
+					<li><img src="Img/link.svg" title="LinkedIn"></li>
+					<li><img src="Img/telegram.svg" title="Telegram"></li>
+					<li><img src="Img/whatsapp.svg" title="whatsApp"></li>
+					<li><img src="Img/photograph.svg" title="Instagram"></li>
+				</ul>
+			</div>
+
+			<div id="aboutUs">
+				
+				<div class="header fade item">
+					<p>About Us</p>
+				</div>
+				<div class="row">
+				
+					<div class="col s12 m12 l6 fade item">
+						<div class="pic2">
+							<img src="Img/pic2.png " alt="">
+						</div>
+					</div>
+					<div class="col s12 m12 l6 fade item">
+						<div class="aboutUs-text">
+							<p>Who we are and what we do</p>
+							<br>
+							<p>Who we are who we are who we are 
+								who we are who we are who we are 
+								who we are who we are who we are 
+								who we are who we are who we are 
+								who we are who we are who we are who we are</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="our-team">
+
+				<div class="header fade item">
+					<p>Meet our team</p>
+				</div>
+
+				<div class="bio">
+					<div class="row fade item">
+						<div class="col s4">
+							<ul>
+								<li><img src="Img/user.png"></li>
+								<li><span>Ashkan Taravati</span></li>
+								<li><span></span>CTO</li>
+								<li>
+									<ul>
+										<li><img src="Img/link.svg"></li>
+										<li><img src="Img/telegram.svg"></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="col s4">
+							<ul>
+								<li><img src="Img/user.png"></li>
+								<li><span>Mohammad hossein Nabi</span></li>
+								<li><span>Backend Developer</span></li>
+								<li>
+									<ul>
+										<li><img src="Img/link.svg"></li>
+										<li><img src="Img/telegram.svg"></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="col s4">
+							<ul>
+								<li><img src="Img/User.png"></li>
+								<li><span>Pouya Mehrbabak</span></li>
+								<li><span>Customer</span></li>
+								<li>
+									<ul>
+										<li><img src="Img/link.svg"></li>
+										<li><img src="Img/telegram.svg"></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>	
+
+					<div class="row fade item">
+						<div class="col s6">
+							<ul>
+								<li><img src="Img/User-girl.png"></li>
+								<li><span>Parisa Qomi</span></li>
+								<li><span></span>UX Designer</li>
+								<li>
+									<ul>
+										<li><img src="Img/link.svg"></li>
+										<li><img src="Img/telegram.svg"></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="col s6">
+							<ul>
+								<li><img src="Img/User-girl.png"></li>
+								<li><span>Parnia Maroofi</span></li>
+								<li><span>Frontend Developer</span></li>
+								<li>
+									<ul>
+										<li><img src="Img/link.svg"></li>
+										<li><img src="Img/telegram.svg"></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div id="contactUs">
+
+				<div class="header fade item">
+					<p>Contact Us</p>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m12 l6 fade item">
+						<div class="contact-text">
+							<p>You can send us email or<br />complete the form</p>
+							<br>
+							<p>hello@farayandgroup.ir</p>
+							
+							<ul>
+								<li><img src="Img/link.svg" title="LinkedIn"></li>
+								<li><img src="Img/telegram.svg" title="Telegram"></li>
+								<li><img src="Img/whatsapp.svg" title="whatsApp"></li>
+								<li><img src="Img/photograph.svg" title="Instagram"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col s12 m12 l6 fade item">
+						<div class="contact-form">
+							<form>
+								<div class="input-field">
+								  <input type="text" id="name1">
+								  <label class="active" for="name1">Name</label>
+								</div>
+								  <div class="input-field">
+									<input type="text" id="subject">
+									<label class="active" for="subject">Subject</label>
+								</div>
+								<div class="input-field">
+									<textarea id="textarea2" data-length="120"></textarea>
+									<label for="textarea2">Message</label>
+								</div>
+							  <form>
+
+							<div class="btn waves-effect" id="contact-btn">Send</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="fixed-action-btn" id="jumpToTop">
+				<a href="#nav" class="btn-floating btn-large"><i class="material-icons">expand_less</i></a>
+			</div>
+	
 		</div>
 
-
+		<footer>
+			<p>All rights reserved</p>
+		</footer>
 	
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script src="materialize/js/materialize.min.js"></script>
 		<script type="text/javascript" src="js/code.js"></script>
+		<script src="https://unpkg.com/fadin"></script>
+
 	</body>
 </html>
