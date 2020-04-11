@@ -1,12 +1,23 @@
 $main_text_color1: rgb(10, 36, 95);
 $main_text_color2: rgb(236, 173, 26);
 
+@font-face {
+    font-family: 'gilroy';
+    src: url('../fonts/gilroy-medium-webfont.woff2') format('woff2'),
+        url('../fonts/gilroy-medium-webfont.woff') format('woff'),
+        url('../fonts/gilroy-medium-webfont.ttf') format('ttf');
+
+}
+
 html {
 	scroll-behavior: smooth;
   }
+body{
+    font-family: 'gilroy';
+}
 nav{
     box-shadow: none !important;
-    width: 100%;
+ 
 
     .brand-logo{
         color: $main_text_color1 !important;
@@ -39,25 +50,21 @@ nav{
      }    
 }
 
-.container{
-    width: 90%;
-
     .pic1{
-       width: 55%;
-       position: absolute;
-       right: 0;
-       top:0;
+      width: 50%;
+      position: absolute;
+      top:0;
+      right: 0;      
     }
 
     #last-pro{
         background-color: none !important;
     }
 
-    .intro-text{
-        position: relative;
-        left:60px;
-        transform: translate(-0%, 50%);
+    .intro-text{       
+        transform: translate(20%, 30%);
         font-size: 22px;
+        width: 70%;
         color: $main_text_color1;
             p:nth-child(2){
                 margin-top: 30px;
@@ -80,21 +87,17 @@ nav{
                     }
                 }
             }
-    }
-
-    #intro-btn{
-        background-color: $main_text_color2 !important;
-        border-radius: 18px !important;
-        margin: 160px;
-        position: relative;
-        left:70px;
+            
+        #intro-btn{
+            background-color: $main_text_color2 !important;
+            border-radius: 18px !important;
+            margin-left: 160px;
+            margin-top: 50px;    
+        }
     }
 
     .sm-icon{
-        position: absolute;
-        left:20px;
-        top:450px;
-        
+        margin: 10px 10px;
         li{
             cursor: pointer;
             padding: 5px;
@@ -105,8 +108,9 @@ nav{
         }
     }
 
+
     #aboutUs{
-        margin-top: 30px;
+        margin-top: 50px;
 
         .header{
             height: 65px;
@@ -114,34 +118,31 @@ nav{
             background-color: $main_text_color1;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
-            position: absolute;
-            left:0;
-
+ 
             p{
                 color: white;
                 font-size: 22px;
-                margin: 16px 35px;
+                padding: 16px 55px;
             }
         }
 
         .row{
             text-align: center;
-            width: 100%;
-            position: relative;
-            top:100px;
+            width: 90%;
+            margin-top: 40px;
 
             .pic2{
 
                 img{
-                    width: 80%;
-                    height: 80%;
+                    width: 90%;
+                    height: 90%;
                     margin: -10px -120px;
                 }
             }
         }
 
         .aboutUs-text{
-            margin-top: 80px;
+            margin-top: 100px;
 
             p{
                 font-size: 23px;
@@ -151,7 +152,7 @@ nav{
     }
 
     #our-team{
-        margin-top: 170px;
+        margin-top: 70px;
 
         .header{
             height: 65px;
@@ -159,20 +160,17 @@ nav{
             background-color: $main_text_color1;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
-            position: absolute;
-            left:0;
-
+ 
             p{
                 color: white;
                 font-size: 22px;
-                margin: 16px 35px;
+                padding: 16px 32px;
             }
-    
         }
 
+
         .bio{
-            position: relative;
-            top:100px;
+            margin-top: 30px;
             text-align: center;
             
             img{
@@ -211,7 +209,7 @@ nav{
     }
 
     #contactUs{
-        margin-top: 120px;
+        margin-top: 30px;
 
         .col{
             margin-top: 50px;
@@ -223,25 +221,22 @@ nav{
             background-color: $main_text_color1;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
-            position: absolute;
-            left:0;
-
+ 
             p{
                 color: white;
                 font-size: 22px;
-                margin: 16px 35px;
+                padding: 16px 45px;
             }
         }
 
+
         .row{
             text-align: center;
-            position: relative;
-            top:100px;
+            width: 90%;
 
             .contact-text{
                 color: $main_text_color1;
-                
-
+            
                 p{
                     &:nth-child(1){
                         font-size: 20px;
@@ -265,7 +260,8 @@ nav{
         }
 
         .contact-form{
-            text-align: left;
+            display: flex;
+            justify-content: center;
 
             input,textarea{
                 padding-left: 10px;
@@ -273,6 +269,7 @@ nav{
                 border-radius: 12px !important;
                 width: 400px;
                 outline: none !important;
+                
 
                 &:focus{
                     border-color: $main_text_color2 !important;
@@ -297,7 +294,6 @@ nav{
         #contact-btn{
             background-color: $main_text_color2;
             border-radius: 18px !important;
-            margin-left: 170px;
             width: 100px;
         }
 
@@ -314,25 +310,25 @@ nav{
             }
         }
     }
-}
+
 
 footer{
     background-color: $main_text_color1;
-    position: relative;
-    top: 140px;
     min-height: 50px;
     text-align: center;
+    margin-top: 80px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     
     p{
         color: white;
         font-size: 18px;
-        position: relative;
-        top:10px;
     }
 }
 
 .fade {
       opacity: 0;
-      transition: 0.3s linear;
+      transition: 0.4s linear;
     }
     

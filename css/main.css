@@ -1,11 +1,19 @@
+@font-face {
+  font-family: 'gilroy';
+  src: url("../fonts/gilroy-medium-webfont.woff2") format("woff2"), url("../fonts/gilroy-medium-webfont.woff") format("woff"), url("../fonts/gilroy-medium-webfont.ttf") format("ttf");
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'gilroy';
 }
 
 nav {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
-  width: 100%;
 }
 
 nav .brand-logo {
@@ -39,219 +47,202 @@ nav .nav-con a:hover {
   color: #699dee !important;
 }
 
-.container {
-  width: 90%;
-}
-
-.container .pic1 {
-  width: 55%;
+.pic1 {
+  width: 50%;
   position: absolute;
-  right: 0;
   top: 0;
+  right: 0;
 }
 
-.container #last-pro {
+#last-pro {
   background-color: none !important;
 }
 
-.container .intro-text {
-  position: relative;
-  left: 60px;
-  -webkit-transform: translate(0%, 50%);
-          transform: translate(0%, 50%);
+.intro-text {
+  -webkit-transform: translate(20%, 30%);
+          transform: translate(20%, 30%);
   font-size: 22px;
+  width: 70%;
   color: #0a245f;
 }
 
-.container .intro-text p:nth-child(2) {
+.intro-text p:nth-child(2) {
   margin-top: 30px;
   margin-left: 25px;
 }
 
-.container .intro-text p:nth-child(3) {
+.intro-text p:nth-child(3) {
   margin-left: 25px;
   margin-bottom: 40px;
 }
 
-.container .intro-text p:nth-child(4) {
+.intro-text p:nth-child(4) {
   margin-left: 70px;
 }
 
-.container .intro-text p:nth-child(4) i {
+.intro-text p:nth-child(4) i {
   color: #ecad1a;
   font-weight: bold;
 }
 
-.container .intro-text p:nth-child(4) i u {
+.intro-text p:nth-child(4) i u {
   text-decoration: underline;
   -webkit-text-decoration-color: #707d9b;
           text-decoration-color: #707d9b;
 }
 
-.container #intro-btn {
+.intro-text #intro-btn {
   background-color: #ecad1a !important;
   border-radius: 18px !important;
-  margin: 160px;
-  position: relative;
-  left: 70px;
+  margin-left: 160px;
+  margin-top: 50px;
 }
 
-.container .sm-icon {
-  position: absolute;
-  left: 20px;
-  top: 450px;
+.sm-icon {
+  margin: 10px 10px;
 }
 
-.container .sm-icon li {
+.sm-icon li {
   cursor: pointer;
   padding: 5px;
 }
 
-.container .sm-icon li img {
+.sm-icon li img {
   width: 35px;
   height: 35px;
 }
 
-.container #aboutUs {
-  margin-top: 30px;
+#aboutUs {
+  margin-top: 50px;
 }
 
-.container #aboutUs .header {
+#aboutUs .header {
   height: 65px;
   width: 215px;
   background-color: #0a245f;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  position: absolute;
-  left: 0;
 }
 
-.container #aboutUs .header p {
+#aboutUs .header p {
   color: white;
   font-size: 22px;
-  margin: 16px 35px;
+  padding: 16px 55px;
 }
 
-.container #aboutUs .row {
+#aboutUs .row {
   text-align: center;
-  width: 100%;
-  position: relative;
-  top: 100px;
+  width: 90%;
+  margin-top: 40px;
 }
 
-.container #aboutUs .row .pic2 img {
-  width: 80%;
-  height: 80%;
+#aboutUs .row .pic2 img {
+  width: 90%;
+  height: 90%;
   margin: -10px -120px;
 }
 
-.container #aboutUs .aboutUs-text {
-  margin-top: 80px;
+#aboutUs .aboutUs-text {
+  margin-top: 100px;
 }
 
-.container #aboutUs .aboutUs-text p {
+#aboutUs .aboutUs-text p {
   font-size: 23px;
   color: #0a245f;
 }
 
-.container #our-team {
-  margin-top: 170px;
+#our-team {
+  margin-top: 70px;
 }
 
-.container #our-team .header {
+#our-team .header {
   height: 65px;
   width: 215px;
   background-color: #0a245f;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  position: absolute;
-  left: 0;
 }
 
-.container #our-team .header p {
+#our-team .header p {
   color: white;
   font-size: 22px;
-  margin: 16px 35px;
+  padding: 16px 32px;
 }
 
-.container #our-team .bio {
-  position: relative;
-  top: 100px;
+#our-team .bio {
+  margin-top: 30px;
   text-align: center;
 }
 
-.container #our-team .bio img {
+#our-team .bio img {
   width: 95px;
   height: 95px;
   border-radius: 50%;
 }
 
-.container #our-team .bio ul {
+#our-team .bio ul {
   color: #0a245f;
 }
 
-.container #our-team .bio ul li {
+#our-team .bio ul li {
   padding-bottom: 12px;
 }
 
-.container #our-team .bio ul li:nth-child(2) {
+#our-team .bio ul li:nth-child(2) {
   font-size: 18px;
   font-weight: bold;
 }
 
-.container #our-team .bio ul li ul li {
+#our-team .bio ul li ul li {
   display: inline-block;
   padding: 3px;
 }
 
-.container #our-team .bio ul li ul li img {
+#our-team .bio ul li ul li img {
   height: 30px;
   width: 30px;
 }
 
-.container #contactUs {
-  margin-top: 120px;
+#contactUs {
+  margin-top: 30px;
 }
 
-.container #contactUs .col {
+#contactUs .col {
   margin-top: 50px;
 }
 
-.container #contactUs .header {
+#contactUs .header {
   height: 65px;
   width: 215px;
   background-color: #0a245f;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  position: absolute;
-  left: 0;
 }
 
-.container #contactUs .header p {
+#contactUs .header p {
   color: white;
   font-size: 22px;
-  margin: 16px 35px;
+  padding: 16px 45px;
 }
 
-.container #contactUs .row {
+#contactUs .row {
   text-align: center;
-  position: relative;
-  top: 100px;
+  width: 90%;
 }
 
-.container #contactUs .row .contact-text {
+#contactUs .row .contact-text {
   color: #0a245f;
 }
 
-.container #contactUs .row .contact-text p:nth-child(1) {
+#contactUs .row .contact-text p:nth-child(1) {
   font-size: 20px;
 }
 
-.container #contactUs .row .contact-text p:nth-child(3) {
+#contactUs .row .contact-text p:nth-child(3) {
   font-size: 16px;
 }
 
-.container #contactUs .row .contact-text ul li {
+#contactUs .row .contact-text ul li {
   margin: 10px;
   display: inline-block;
   cursor: pointer;
@@ -259,11 +250,16 @@ nav .nav-con a:hover {
   height: 30px;
 }
 
-.container #contactUs .contact-form {
-  text-align: left;
+#contactUs .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.container #contactUs .contact-form input, .container #contactUs .contact-form textarea {
+#contactUs .contact-form input, #contactUs .contact-form textarea {
   padding-left: 10px;
   border: 1px solid #ecad1a !important;
   border-radius: 12px !important;
@@ -271,58 +267,62 @@ nav .nav-con a:hover {
   outline: none !important;
 }
 
-.container #contactUs .contact-form input:focus, .container #contactUs .contact-form textarea:focus {
+#contactUs .contact-form input:focus, #contactUs .contact-form textarea:focus {
   border-color: #ecad1a !important;
   -webkit-box-shadow: 0 0 0 0 white !important;
           box-shadow: 0 0 0 0 white !important;
 }
 
-.container #contactUs .contact-form #textarea2 {
+#contactUs .contact-form #textarea2 {
   min-height: 200px;
   min-width: 413px;
 }
 
-.container #contactUs .contact-form label {
+#contactUs .contact-form label {
   padding: 0 6px 0 6px;
   margin-left: 12px;
   background-color: white;
   color: #0a245f;
 }
 
-.container #contactUs #contact-btn {
+#contactUs #contact-btn {
   background-color: #ecad1a;
   border-radius: 18px !important;
-  margin-left: 170px;
   width: 100px;
 }
 
-.container #jumpToTop a {
+#jumpToTop a {
   background-color: #ecad1a !important;
   opacity: 0.9;
 }
 
-.container #jumpToTop a i {
+#jumpToTop a i {
   font-size: 35px;
 }
 
 footer {
   background-color: #0a245f;
-  position: relative;
-  top: 140px;
   min-height: 50px;
   text-align: center;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer p {
   color: white;
   font-size: 18px;
-  position: relative;
-  top: 10px;
 }
 
 .fade {
   opacity: 0;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
 }
 /*# sourceMappingURL=main.css.map */
