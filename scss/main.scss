@@ -1,5 +1,5 @@
 $main_text_color1: rgb(10, 36, 95);
-$main_text_color2: rgb(236, 173, 26);
+$main_text_color2: rgb(241, 102, 1);
 
 @font-face {
     font-family: 'gilroy';
@@ -8,135 +8,123 @@ $main_text_color2: rgb(236, 173, 26);
         url('../fonts/gilroy-medium-webfont.ttf') format('ttf');
 
 }
+@font-face {
+    font-family: 'aldrich';
+    src: url('../fonts/Aldrich-Regular.woff2') format('woff2'),
+        url('../fonts/Aldrich-Regular.woff') format('woff'),
+        url('../fonts/Aldrich-Regular.ttf') format('ttf');
+
+}
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'gilroy';
+    font-family: 'aldrich';
+    width: 100%;
 }
 
-nav {
-    box-shadow: none !important;
-
-
-    .brand-logo {
-        color: $main_text_color1 !important;
-        font-size: 16px !important;
-        margin-left: 10px;
-    }
-
-    .sidenav-trigger {
-        i {
-            color: $main_text_color1 !important;
-        }
-    }
-
-    .nav-wrapper {
-        background-color: white !important;
-    }
-
-    .nav-con {
-        margin-left: 100px !important;
-
-        a {
-            color: $main_text_color1 !important;
-            font-size: 16px !important;
-            padding-left: 35px !important;
-            transition: 300ms;
-
-            &:hover {
-                background-color: white !important;
-                color: rgb(105, 157, 238) !important;
-            }
-        }
-    }
-}
-
-// .pic1{
-//   width: 50%;
-//   position: absolute;
-//  top:0;
-//   right: 0;      
-// }
-.landing-img {
-    width: 40%;
-    position: absolute;
-    top: -6rem;
-    right: 0;
-
-    img {
+#top-section{
+    width: 100%;
+    
+    .main {
         width: 100%;
+        height: 670px;
+        background: linear-gradient(130deg, #bd7937, #939ecc, #bd7937,#939ecc);
+        background-size: 400% 400%;
+
+        .contents{
+            position: absolute;
+            top:30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            
+    
+            .context{
+                img{
+                    width: 280px;
+                    height: 280px;
+                }
+               
+                text-align: center;
+                color: $main_text_color1;
+                
+                p{
+                    padding-top: 0px;
+                }
+            }
+    
+            .sm-icon {
+                padding-top: 12px;
+                ul{
+                    li{
+                        cursor: pointer;
+                        padding: 25px;
+                        display: inline-block;
+            
+                        img {
+                            width: 40px;
+                            height: 40px;
+
+                            &:hover{
+                                transform: scale(1.2);
+                                transition: 0.1s linear;
+                            }
+                        }
+                    }
+                }
+            }  
+        }
     }
-}
+    
+    .contents{
+        position: absolute;
+        top:30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
 
-#last-pro {
-    background-color: none !important;
-}
-
-.intro-text {
-    transform: translate(20%, 30%);
-    font-size: 22px;
-    width: 70%;
-    color: $main_text_color1;
-
-    p:nth-child(2) {
-        margin-top: 30px;
-        margin-left: 25px;
-    }
-
-    p:nth-child(3) {
-        margin-left: 25px;
-        margin-bottom: 40px;
-        ;
-    }
-
-    p:nth-child(4) {
-        margin-left: 70px;
-
-        i {
-            color: $main_text_color2;
-            font-weight: bold;
-
-            u {
-                text-decoration: underline;
-                text-decoration-color: rgb(112, 125, 155);
+        .context{
+            img{
+                width: 280px;
+                height: 280px;
+            }
+           
+            text-align: center;
+            color: $main_text_color1;
+            
+            p{
+                padding-top: 3px;
             }
         }
-    }
 
-    #intro-btn {
-        background-color: $main_text_color2 !important;
-        border-radius: 18px !important;
-        margin-left: 160px;
-        margin-top: 50px;
-    }
-}
-
-.sm-icon {
-    // margin: 10px 10px;
-    position: absolute;
-    bottom: 0;
-
-    li {
-        cursor: pointer;
-        padding: 5px;
-
-        img {
-            width: 35px;
-            height: 35px;
-        }
+        .sm-icon {
+            ul{
+                li{
+                    cursor: pointer;
+                    padding: 25px;
+                    display: inline-block;
+        
+                    img {
+                        width: 38px;
+                        height: 38px;
+                    }
+                }
+            }
+        }  
     }
 }
+
+
+
 
 #our-team {
-    margin-top: 70px;
-
-
 
     .bio {
-        margin-top: 30px;
+        padding-top: 50px;
         text-align: center;
 
         img {
@@ -192,7 +180,6 @@ footer {
     background-color: $main_text_color1;
     min-height: 50px;
     text-align: center;
-    margin-top: 80px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -213,9 +200,7 @@ footer {
     height: 65px;
     width: 215px;
     background-color: $main_text_color1;
-    // border-top-right-radius: 20px;
-    // border-bottom-right-radius: 20px;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0px 20px 20px 0px;
     text-align: center;
 
     p {

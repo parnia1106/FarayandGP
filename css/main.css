@@ -3,126 +3,118 @@
   src: url("../fonts/gilroy-medium-webfont.woff2") format("woff2"), url("../fonts/gilroy-medium-webfont.woff") format("woff"), url("../fonts/gilroy-medium-webfont.ttf") format("ttf");
 }
 
+@font-face {
+  font-family: 'aldrich';
+  src: url("../fonts/Aldrich-Regular.woff2") format("woff2"), url("../fonts/Aldrich-Regular.woff") format("woff"), url("../fonts/Aldrich-Regular.ttf") format("ttf");
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'gilroy';
-}
-
-nav {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-}
-
-nav .brand-logo {
-  color: #0a245f !important;
-  font-size: 16px !important;
-  margin-left: 10px;
-}
-
-nav .sidenav-trigger i {
-  color: #0a245f !important;
-}
-
-nav .nav-wrapper {
-  background-color: white !important;
-}
-
-nav .nav-con {
-  margin-left: 100px !important;
-}
-
-nav .nav-con a {
-  color: #0a245f !important;
-  font-size: 16px !important;
-  padding-left: 35px !important;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-nav .nav-con a:hover {
-  background-color: white !important;
-  color: #699dee !important;
-}
-
-.landing-img {
-  width: 40%;
-  position: absolute;
-  top: -6rem;
-  right: 0;
-}
-
-.landing-img img {
+  font-family: 'aldrich';
   width: 100%;
 }
 
-#last-pro {
-  background-color: none !important;
+#top-section {
+  width: 100%;
 }
 
-.intro-text {
-  -webkit-transform: translate(20%, 30%);
-          transform: translate(20%, 30%);
-  font-size: 22px;
-  width: 70%;
+#top-section .main {
+  width: 100%;
+  height: 670px;
+  background: linear-gradient(130deg, #bd7937, #939ecc, #bd7937, #939ecc);
+  background-size: 400% 400%;
+}
+
+#top-section .main .contents {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#top-section .main .contents .context {
+  text-align: center;
   color: #0a245f;
 }
 
-.intro-text p:nth-child(2) {
-  margin-top: 30px;
-  margin-left: 25px;
+#top-section .main .contents .context img {
+  width: 280px;
+  height: 280px;
 }
 
-.intro-text p:nth-child(3) {
-  margin-left: 25px;
-  margin-bottom: 40px;
+#top-section .main .contents .context p {
+  padding-top: 0px;
 }
 
-.intro-text p:nth-child(4) {
-  margin-left: 70px;
+#top-section .main .contents .sm-icon {
+  padding-top: 12px;
 }
 
-.intro-text p:nth-child(4) i {
-  color: #ecad1a;
-  font-weight: bold;
-}
-
-.intro-text p:nth-child(4) i u {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #707d9b;
-          text-decoration-color: #707d9b;
-}
-
-.intro-text #intro-btn {
-  background-color: #ecad1a !important;
-  border-radius: 18px !important;
-  margin-left: 160px;
-  margin-top: 50px;
-}
-
-.sm-icon {
-  position: absolute;
-  bottom: 0;
-}
-
-.sm-icon li {
+#top-section .main .contents .sm-icon ul li {
   cursor: pointer;
-  padding: 5px;
+  padding: 25px;
+  display: inline-block;
 }
 
-.sm-icon li img {
-  width: 35px;
-  height: 35px;
+#top-section .main .contents .sm-icon ul li img {
+  width: 40px;
+  height: 40px;
 }
 
-#our-team {
-  margin-top: 70px;
+#top-section .main .contents .sm-icon ul li img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+
+#top-section .contents {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#top-section .contents .context {
+  text-align: center;
+  color: #0a245f;
+}
+
+#top-section .contents .context img {
+  width: 280px;
+  height: 280px;
+}
+
+#top-section .contents .context p {
+  padding-top: 3px;
+}
+
+#top-section .contents .sm-icon ul li {
+  cursor: pointer;
+  padding: 25px;
+  display: inline-block;
+}
+
+#top-section .contents .sm-icon ul li img {
+  width: 38px;
+  height: 38px;
 }
 
 #our-team .bio {
-  margin-top: 30px;
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -156,7 +148,7 @@ nav .nav-con a:hover {
 }
 
 #jumpToTop a {
-  background-color: #ecad1a !important;
+  background-color: #f16601 !important;
   opacity: 0.9;
 }
 
@@ -168,7 +160,6 @@ footer {
   background-color: #0a245f;
   min-height: 50px;
   text-align: center;
-  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,7 +185,7 @@ footer p {
   height: 65px;
   width: 215px;
   background-color: #0a245f;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0px 20px 20px 0px;
   text-align: center;
 }
 
