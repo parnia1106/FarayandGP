@@ -113,36 +113,54 @@ body {
   height: 38px;
 }
 
-#our-team .bio {
-  padding-top: 50px;
+#our-team .profile {
+  margin-top: 70px;
   text-align: center;
+  border-top: 1px solid #0a245f;
 }
 
-#our-team .bio img {
+#our-team .profile .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -40px;
+}
+
+#our-team .profile .header span {
+  padding: 20px;
+  font-size: 27px;
+  color: #0a245f;
+  background-color: white;
+}
+
+#our-team .profile img {
   width: 95px;
   height: 95px;
   border-radius: 50%;
 }
 
-#our-team .bio ul {
+#our-team .profile ul {
   color: #0a245f;
 }
 
-#our-team .bio ul li {
+#our-team .profile ul li {
   padding-bottom: 12px;
 }
 
-#our-team .bio ul li:nth-child(2) {
+#our-team .profile ul li:nth-child(2) {
   font-size: 18px;
   font-weight: bold;
 }
 
-#our-team .bio ul li ul li {
+#our-team .profile ul li ul li {
   display: inline-block;
   padding: 3px;
 }
 
-#our-team .bio ul li ul li img {
+#our-team .profile ul li ul li img {
   height: 30px;
   width: 30px;
 }
@@ -179,20 +197,6 @@ footer p {
   opacity: 0;
   -webkit-transition: 0.4s linear;
   transition: 0.4s linear;
-}
-
-.header {
-  height: 65px;
-  width: 215px;
-  background-color: #0a245f;
-  border-radius: 0px 20px 20px 0px;
-  text-align: center;
-}
-
-.header p {
-  color: white;
-  font-size: 22px;
-  padding: 16px 0;
 }
 
 .cta-btn {

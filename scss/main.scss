@@ -118,15 +118,25 @@ body {
     }
 }
 
-
-
-
-#our-team {
-
-    .bio {
-        padding-top: 50px;
+#our-team {    
+    .profile {
+        margin-top: 70px;
         text-align: center;
+        border-top: 1px solid rgb(10, 36, 95);
 
+        .header{
+            display: flex;
+            justify-content: center;
+            margin-top: -40px;
+    
+            span{
+                padding: 20px;
+                font-size: 27px;
+                color: rgb(10, 36, 95);
+                background-color: white;
+            }
+        }
+    
         img {
             width: 95px;
             height: 95px;
@@ -196,19 +206,6 @@ footer {
 }
 
 //--parisa
-.header {
-    height: 65px;
-    width: 215px;
-    background-color: $main_text_color1;
-    border-radius: 0px 20px 20px 0px;
-    text-align: center;
-
-    p {
-        color: white;
-        font-size: 22px;
-        padding: 16px 0;
-    }
-}
 
 .cta-btn {
     display: flex;
