@@ -34,6 +34,11 @@ body {
         background: linear-gradient(130deg, #bd7937, #939ecc, #bd7937,#939ecc);
         background-size: 400% 400%;
 
+        -webkit-animation: AnimationName 32s ease infinite;
+        -moz-animation: AnimationName 32s ease infinite;
+        -o-animation: AnimationName 32s ease infinite;
+        animation: AnimationName 32s ease infinite;
+
         .contents{
             position: absolute;
             top:30px;
@@ -50,16 +55,24 @@ body {
                
                 text-align: center;
                 color: $main_text_color1;
-                
+
                 p{
-                    padding-top: 0px;
+                    padding-top: 0;
+                }
+                
+                h4{
+                    font-weight: bold;
+                }
+                
+                h3{
+                    color: rgba(50, 66, 107, 0.712);
+                    font-weight: bold;
                 }
             }
     
             .sm-icon {
-                padding-top: 12px;
-                ul{
-                    li{
+                padding-top: 30px;
+                    a{
                         cursor: pointer;
                         padding: 25px;
                         display: inline-block;
@@ -74,10 +87,32 @@ body {
                             }
                         }
                     }
-                }
-            }  
+            }
+              
         }
-    }
+    }  
+}
+
+    @-webkit-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
     
     .contents{
         position: absolute;
@@ -116,24 +151,26 @@ body {
             }
         }  
     }
-}
+
 
 #our-team {    
     .profile {
         margin-top: 70px;
         text-align: center;
-        border-top: 1px solid rgb(10, 36, 95);
+        border-top: 2px solid rgb(10, 36, 95);
 
         .header{
             display: flex;
             justify-content: center;
-            margin-top: -40px;
+            margin-top: -42px;
+            width: 100%;
     
             span{
                 padding: 20px;
-                font-size: 27px;
+                font-size: 25px;
                 color: rgb(10, 36, 95);
                 background-color: white;
+                font-weight: bold;
             }
         }
     
@@ -144,14 +181,15 @@ body {
         }
 
         ul {
-            color: $main_text_color1;
 
             li {
                 padding-bottom: 12px;
+                font-weight: bold;
+                color: rgba(50, 66, 107, 0.712);
 
                 &:nth-child(2) {
-                    font-size: 18px;
-                    font-weight: bold;
+                    font-size: 16px;
+                    color: $main_text_color1;
                 }
 
 
@@ -231,30 +269,39 @@ footer {
     height: 90vh;
 }
 
-@media only screen and(max-width: 768px) {
-    .intro-text #intro-btn {
-        margin: 0;
-    }
+@media only screen and(max-width: 411px) {
+    #top-section{
 
-    .cta-btn {
-        justify-content: center;
-    }
+        .main{
+            .contents{
+                .context{
+                    img{
+                        width: 200px;
+                        height: 200px;
+                    }
+                
+                    text-align: center;
+                    color: $main_text_color1;
 
-    .intro-text {
-        transform: translate(20%, 5%);
-
-    }
-
-    .header {
-        height: 48px;
-        width: 150px;
-        background-color: #0a245f;
-        border-radius: 0 15px 15px 0;
-        text-align: center;
-
-        p {
-            font-size: 12px;
-            padding: 16px 0;
+                    h4{
+                        font-size: 26px;
+                    }
+                    h3{
+                        font-size: 33px;
+                    }
+                    
+                }
+            }
         }
     }
+}
+#our-team{
+    .profile{
+        img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        }
+    }
+        
 }
