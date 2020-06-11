@@ -21,9 +21,11 @@ html {
 }
 
 body {
-    font-family: 'aldrich';
+    font-family: Tahoma;
     width: 100%;
 }
+
+
 
 #top-section{
     width: 100%;
@@ -31,21 +33,92 @@ body {
     .main {
         width: 100%;
         height: 670px;
-        background: linear-gradient(130deg, #bd7937, #939ecc, #bd7937,#939ecc);
-        background-size: 400% 400%;
+        
 
+        @keyframes move_wave {
+            0% {
+                transform: translateX(0) translateZ(0) scaleY(1)
+            }
+            50% {
+                transform: translateX(-25%) translateZ(0) scaleY(0.55)
+            }
+            100% {
+                transform: translateX(-50%) translateZ(0) scaleY(1)
+            }
+        }
+        .waveWrapper {
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            margin: auto;
+            min-height: 670px;
+        }
+        .waveWrapperInner {
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+            height: 100%;
+            top:0;
+            bottom: -1px;
+            background-color: rgb(172, 182, 204);
+        }
+        .bgTop {
+            z-index: 15;
+            opacity: 0.5;
+        }
+        .bgMiddle {
+            z-index: 10;
+            opacity: 0.75;
+        }
+        .bgBottom {
+            z-index: 5;
+        }
+        .wave {
+            position: absolute;
+            left: 0;
+            width: 200%;
+            height: 100%;
+            background-repeat: repeat no-repeat;
+            background-position: 0 bottom;
+            transform-origin: center bottom;
+        }
+        .waveTop {
+            background-size: 50% 100px;
+        }
+        .waveAnimation .waveTop {
+          animation: move-wave 3s;
+           -webkit-animation: move-wave 3s;
+           -webkit-animation-delay: 1s;
+           animation-delay: 1s;
+        }
+        .waveMiddle {
+            background-size: 50% 120px;
+        }
+        .waveAnimation .waveMiddle {
+            animation: move_wave 10s linear infinite;
+        }
+        .waveBottom {
+            background-size: 50% 100px;
+        }
+        .waveAnimation .waveBottom {
+            animation: move_wave 15s linear infinite;
+        }
+       
         .contents{
             position: absolute;
-            top:30px;
+            top:20px;
             width: 100%;
             display: flex;
             justify-content: center;
+            z-index: 1000;
             
     
             .context{
                 img{
-                    width: 280px;
-                    height: 280px;
+                    width: 250px;
+                    height: 250px;
                 }
                
                 text-align: center;
@@ -58,10 +131,11 @@ body {
     
             .sm-icon {
                 padding-top: 12px;
+                margin-left: -5px;
                 ul{
                     li{
                         cursor: pointer;
-                        padding: 25px;
+                        padding: 15px;
                         display: inline-block;
             
                         img {
@@ -159,10 +233,16 @@ body {
                     li {
                         display: inline-block;
                         padding: 3px;
+                        cursor: pointer;
 
                         img {
                             height: 30px;
                             width: 30px;
+                        }
+
+                        &:hover{
+                            transform: scale(1.2);
+                            transition: 0.1s linear;
                         }
 
                     }

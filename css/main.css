@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'aldrich';
+  font-family: Tahoma;
   width: 100%;
 }
 
@@ -24,13 +24,115 @@ body {
 #top-section .main {
   width: 100%;
   height: 670px;
-  background: linear-gradient(130deg, #bd7937, #939ecc, #bd7937, #939ecc);
-  background-size: 400% 400%;
+}
+
+@-webkit-keyframes move_wave {
+  0% {
+    -webkit-transform: translateX(0) translateZ(0) scaleY(1);
+            transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    -webkit-transform: translateX(-25%) translateZ(0) scaleY(0.55);
+            transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateZ(0) scaleY(1);
+            transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+@keyframes move_wave {
+  0% {
+    -webkit-transform: translateX(0) translateZ(0) scaleY(1);
+            transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    -webkit-transform: translateX(-25%) translateZ(0) scaleY(0.55);
+            transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateZ(0) scaleY(1);
+            transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+#top-section .main .waveWrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  min-height: 670px;
+}
+
+#top-section .main .waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  top: 0;
+  bottom: -1px;
+  background-color: #acb6cc;
+}
+
+#top-section .main .bgTop {
+  z-index: 15;
+  opacity: 0.5;
+}
+
+#top-section .main .bgMiddle {
+  z-index: 10;
+  opacity: 0.75;
+}
+
+#top-section .main .bgBottom {
+  z-index: 5;
+}
+
+#top-section .main .wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+
+#top-section .main .waveTop {
+  background-size: 50% 100px;
+}
+
+#top-section .main .waveAnimation .waveTop {
+  animation: move-wave 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+#top-section .main .waveMiddle {
+  background-size: 50% 120px;
+}
+
+#top-section .main .waveAnimation .waveMiddle {
+  -webkit-animation: move_wave 10s linear infinite;
+          animation: move_wave 10s linear infinite;
+}
+
+#top-section .main .waveBottom {
+  background-size: 50% 100px;
+}
+
+#top-section .main .waveAnimation .waveBottom {
+  -webkit-animation: move_wave 15s linear infinite;
+          animation: move_wave 15s linear infinite;
 }
 
 #top-section .main .contents {
   position: absolute;
-  top: 30px;
+  top: 20px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,6 +140,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 1000;
 }
 
 #top-section .main .contents .context {
@@ -46,8 +149,8 @@ body {
 }
 
 #top-section .main .contents .context img {
-  width: 280px;
-  height: 280px;
+  width: 250px;
+  height: 250px;
 }
 
 #top-section .main .contents .context p {
@@ -56,11 +159,12 @@ body {
 
 #top-section .main .contents .sm-icon {
   padding-top: 12px;
+  margin-left: -5px;
 }
 
 #top-section .main .contents .sm-icon ul li {
   cursor: pointer;
-  padding: 25px;
+  padding: 15px;
   display: inline-block;
 }
 
@@ -158,11 +262,19 @@ body {
 #our-team .profile ul li ul li {
   display: inline-block;
   padding: 3px;
+  cursor: pointer;
 }
 
 #our-team .profile ul li ul li img {
   height: 30px;
   width: 30px;
+}
+
+#our-team .profile ul li ul li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
 }
 
 #jumpToTop a {
