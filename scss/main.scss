@@ -1,5 +1,7 @@
-$main_text_color1: rgb(10, 36, 95);
-$main_text_color2: rgb(241, 102, 1);
+$main_text_color1: #1D3557;
+$main_text_color2: #F26419;
+$main_text_color3: #33658A;
+$main_text_color4: rgb(172, 182, 204);
 
 @font-face {
     font-family: 'gilroy';
@@ -21,7 +23,7 @@ html {
 }
 
 body {
-    font-family: Tahoma;
+    font-family: 'gilroy';
     width: 100%;
 }
 
@@ -113,25 +115,40 @@ body {
             display: flex;
             justify-content: center;
             z-index: 1000;
-            
+
+            .bg{
+                margin-top: -20px;
+                background-image: url('Img/bg3.png'); 
+                width:100%; 
+                height: 580px; 
+                background-size: cover;
+            }            
     
             .context{
                 img{
                     width: 250px;
                     height: 250px;
                 }
-               
+                margin-top: 20px;
                 text-align: center;
                 color: $main_text_color1;
                 
                 p{
                     padding-top: 0px;
                 }
+
+                h4{
+                    font-weight: bold;
+                }
+
+                .typed-cursor{
+                    display: none;
+                }
             }
     
             .sm-icon {
                 padding-top: 12px;
-                margin-left: -5px;
+                margin-left: -10px;
                 ul{
                     li{
                         cursor: pointer;
@@ -139,8 +156,8 @@ body {
                         display: inline-block;
             
                         img {
-                            width: 40px;
-                            height: 40px;
+                            width: 35px;
+                            height: 35px;
 
                             &:hover{
                                 transform: scale(1.2);
@@ -152,106 +169,77 @@ body {
             }  
         }
     }
-    
-    .contents{
-        position: absolute;
-        top:30px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        
-
-        .context{
-            img{
-                width: 280px;
-                height: 280px;
-            }
-           
-            text-align: center;
-            color: $main_text_color1;
-            
-            p{
-                padding-top: 3px;
-            }
-        }
-
-        .sm-icon {
-            ul{
-                li{
-                    cursor: pointer;
-                    padding: 25px;
-                    display: inline-block;
-        
-                    img {
-                        width: 38px;
-                        height: 38px;
-                    }
-                }
-            }
-        }  
-    }
 }
 
-#our-team {    
-    .profile {
+#our-team { 
+    display: flex;
+    justify-content: center;
+
+    .profiles {
         margin-top: 70px;
         text-align: center;
-        border-top: 1px solid rgb(10, 36, 95);
+        border-top: 1px solid #33658A;
+        width: 90%;
+        padding: 50px;
+        
 
         .header{
             display: flex;
-            justify-content: center;
-            margin-top: -40px;
+            justify-content: flex-end;
+            margin-top: -100px;
+            width: 100%;
     
             span{
-                padding: 20px;
-                font-size: 27px;
-                color: rgb(10, 36, 95);
+                padding: 27px;
+                font-size: 25px;
+                color: $main_text_color3;
                 background-color: white;
             }
         }
-    
-        img {
-            width: 95px;
-            height: 95px;
-            border-radius: 50%;
+
+        .profile{
+            width: 280px;
+            text-align: left; 
         }
 
-        ul {
-            color: $main_text_color1;
+        .col{
+            display: flex;
+            justify-content: center;
 
-            li {
-                padding-bottom: 12px;
+            h5{
+                color: $main_text_color1;
+                font-size: 22px;
+            }
 
-                &:nth-child(2) {
-                    font-size: 18px;
-                    font-weight: bold;
-                }
+            p{
+                color: $main_text_color3;
+                font-size: 16px;
+                list-style: none;
+            }
 
-
-                ul {
-                    li {
+            .card-action{
+                padding: 0px 20px;
+                text-align: center;
+                ul{
+                    li{
                         display: inline-block;
-                        padding: 3px;
-                        cursor: pointer;
-
-                        img {
-                            height: 30px;
-                            width: 30px;
+    
+                        img{
+                            width: 25px;
+                            height: 25px;
                         }
 
                         &:hover{
                             transform: scale(1.2);
-                            transition: 0.1s linear;
+                            transition: 0.1s;
                         }
-
-                    }
+                    } 
                 }
             }
+                 
         }
     }
-
-} 
+}
 
 #jumpToTop {
     a {
@@ -267,15 +255,15 @@ body {
 
 
 footer {
-    background-color: $main_text_color1;
-    min-height: 50px;
+    background-color: $main_text_color4;
+    height: 50px;
     text-align: center;
     display: flex;
-    align-content: center;
     justify-content: center;
+    
 
     p {
-        color: white;
+        color: $main_text_color1;
         font-size: 18px;
     }
 }
@@ -285,56 +273,6 @@ footer {
     transition: 0.4s linear;
 }
 
-//--parisa
-
-.cta-btn {
-    display: flex;
-}
-
-.mail-secion {
-    display: flex;
-    justify-content: center;
-
-    p {
-        display: flex;
-        align-items: center;
-        color: $main_text_color1;
-
-        i {
-            margin-right: 5px;
-        }
-    }
-}
-
-.top-section {
-    position: relative;
-    height: 90vh;
-}
-
 @media only screen and(max-width: 768px) {
-    .intro-text #intro-btn {
-        margin: 0;
-    }
-
-    .cta-btn {
-        justify-content: center;
-    }
-
-    .intro-text {
-        transform: translate(20%, 5%);
-
-    }
-
-    .header {
-        height: 48px;
-        width: 150px;
-        background-color: #0a245f;
-        border-radius: 0 15px 15px 0;
-        text-align: center;
-
-        p {
-            font-size: 12px;
-            padding: 16px 0;
-        }
-    }
+    
 }

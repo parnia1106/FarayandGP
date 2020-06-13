@@ -1,8 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-     var elems = document.querySelectorAll('.sidenav');
-     var instances = M.Sidenav.init(elems);
-});
-
 let btn = document.getElementById("jumpToTop");
 btn.style.visibility = "hidden";
 
@@ -19,7 +14,9 @@ function scrollFunction() {
   }
 }
 
+
 document.addEventListener("DOMContentLoaded", () => {
        fadin('.fade', { delay: 200 })
      });
+
      
