@@ -2,6 +2,7 @@ $main_text_color1: #1D3557;
 $main_text_color2: #F26419;
 $main_text_color3: #33658A;
 $main_text_color4: rgb(172, 182, 204);
+$main_text_color5: #F48923;
 
 @font-face {
     font-family: 'gilroy';
@@ -185,9 +186,10 @@ body {
 
         .header{
             display: flex;
-            justify-content: flex-end;
+            justify-content: flex-start; 
             margin-top: -100px;
             width: 100%;
+            margin-bottom: 30px;
     
             span{
                 padding: 27px;
@@ -199,7 +201,8 @@ body {
 
         .profile{
             width: 280px;
-            text-align: left; 
+            text-align: left;
+            margin-bottom: 50px;
         }
 
         .col{
@@ -214,7 +217,11 @@ body {
             p{
                 color: $main_text_color3;
                 font-size: 16px;
-                list-style: none;
+                
+            }
+
+            .card-content{
+                padding: 10px 20px;
             }
 
             .card-action{
@@ -223,10 +230,12 @@ body {
                 ul{
                     li{
                         display: inline-block;
-    
+                        
                         img{
                             width: 25px;
                             height: 25px;
+                            position: relative;
+                            left: 10px;
                         }
 
                         &:hover{
@@ -258,13 +267,13 @@ footer {
     background-color: $main_text_color4;
     height: 50px;
     text-align: center;
-    display: flex;
-    justify-content: center;
+
     
 
     p {
         color: $main_text_color1;
         font-size: 18px;
+        padding-top: 12px;
     }
 }
 
@@ -273,6 +282,98 @@ footer {
     transition: 0.4s linear;
 }
 
-@media only screen and(max-width: 768px) {
+@media only screen and(max-width: 600px) {
     
+    #top-section{
+
+        .main{
+            .contents{
+                .context{
+                    img{
+                        width: 180px;
+                        height: 180px;
+                    }
+        
+                    h4{
+                        
+                        font-size: 25px;
+                    }
+        
+                    h3{
+                        font-size: 28px;
+                    }
+                }
+        
+                .sm-icon {
+                    ul{
+                        li{
+                
+                            img {
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+                    }
+                }  
+            }
+        }
+    }
+
+    #our-team { 
+        .profiles {
+            padding: 30px;
+
+            .header{
+                display: flex;
+                justify-content: center; 
+                margin-top: -75px;
+               
+                span{
+                    font-size: 22px;
+                }
+            }
+
+            .col{
+        
+                h5{
+                    color: $main_text_color1;
+                    font-size: 21px;
+                }
+    
+                p{
+                    color: $main_text_color3;
+                    font-size: 17px;
+                }
+    
+                .card-content{
+                    padding: 10px 20px;
+                }
+    
+                .card-action{
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    
+                    ul{ 
+                        
+                        li{
+                            display: inline-block;
+        
+                            img{
+                                width: 23px;
+                                height: 23px;
+                            }
+    
+                            &:hover{
+                                transform: scale(1.2);
+                                transition: 0.1s;
+                            }
+                        } 
+                    }
+                }
+                     
+            }
+        }
+    }
+
 }

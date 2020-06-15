@@ -218,11 +218,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-top: -100px;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 #our-team .profiles .header span {
@@ -235,6 +236,7 @@ body {
 #our-team .profiles .profile {
   width: 280px;
   text-align: left;
+  margin-bottom: 50px;
 }
 
 #our-team .profiles .col {
@@ -254,7 +256,10 @@ body {
 #our-team .profiles .col p {
   color: #33658A;
   font-size: 16px;
-  list-style: none;
+}
+
+#our-team .profiles .col .card-content {
+  padding: 10px 20px;
 }
 
 #our-team .profiles .col .card-action {
@@ -269,6 +274,8 @@ body {
 #our-team .profiles .col .card-action ul li img {
   width: 25px;
   height: 25px;
+  position: relative;
+  left: 10px;
 }
 
 #our-team .profiles .col .card-action ul li:hover {
@@ -291,22 +298,82 @@ footer {
   background-color: #acb6cc;
   height: 50px;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 footer p {
   color: #1D3557;
   font-size: 18px;
+  padding-top: 12px;
 }
 
 .fade {
   opacity: 0;
   -webkit-transition: 0.4s linear;
   transition: 0.4s linear;
+}
+
+@media only screen and (max-width: 600px) {
+  #top-section .main .contents .context img {
+    width: 180px;
+    height: 180px;
+  }
+  #top-section .main .contents .context h4 {
+    font-size: 25px;
+  }
+  #top-section .main .contents .context h3 {
+    font-size: 28px;
+  }
+  #top-section .main .contents .sm-icon ul li img {
+    width: 30px;
+    height: 30px;
+  }
+  #our-team .profiles {
+    padding: 30px;
+  }
+  #our-team .profiles .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: -75px;
+  }
+  #our-team .profiles .header span {
+    font-size: 22px;
+  }
+  #our-team .profiles .col h5 {
+    color: #1D3557;
+    font-size: 21px;
+  }
+  #our-team .profiles .col p {
+    color: #33658A;
+    font-size: 17px;
+  }
+  #our-team .profiles .col .card-content {
+    padding: 10px 20px;
+  }
+  #our-team .profiles .col .card-action {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #our-team .profiles .col .card-action ul li {
+    display: inline-block;
+  }
+  #our-team .profiles .col .card-action ul li img {
+    width: 23px;
+    height: 23px;
+  }
+  #our-team .profiles .col .card-action ul li:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+  }
 }
 /*# sourceMappingURL=main.css.map */
