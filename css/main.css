@@ -234,9 +234,68 @@ body {
 }
 
 #our-team .profiles .profile {
-  width: 280px;
+  width: 270px;
   text-align: left;
   margin-bottom: 50px;
+  color: transparent;
+}
+
+#our-team .profiles .profile h5 {
+  color: #1D3557;
+  font-size: 22px;
+}
+
+#our-team .profiles .profile p {
+  color: #33658A;
+  font-size: 16px;
+}
+
+#our-team .profiles .profile .card-content {
+  padding: 10px 20px;
+}
+
+#our-team .profiles .profile .card-action {
+  background-color: transparent;
+  padding: 0px 20px;
+  text-align: center;
+  height: 60px;
+}
+
+#our-team .profiles .profile .card-action::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 7px;
+  background-color: rgba(172, 182, 204, 0.603);
+  border-radius: 2px;
+  bottom: 0;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#our-team .profiles .profile .card-action:hover::before {
+  width: 100%;
+}
+
+#our-team .profiles .profile .card-action ul li {
+  display: inline-block;
+}
+
+#our-team .profiles .profile .card-action ul li img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: 10px;
+}
+
+#our-team .profiles .profile .card-action ul li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 #our-team .profiles .col {
@@ -248,46 +307,17 @@ body {
           justify-content: center;
 }
 
-#our-team .profiles .col h5 {
-  color: #1D3557;
-  font-size: 22px;
-}
-
-#our-team .profiles .col p {
-  color: #33658A;
-  font-size: 16px;
-}
-
-#our-team .profiles .col .card-content {
-  padding: 10px 20px;
-}
-
-#our-team .profiles .col .card-action {
-  padding: 0px 20px;
-  text-align: center;
-}
-
-#our-team .profiles .col .card-action ul li {
-  display: inline-block;
-}
-
-#our-team .profiles .col .card-action ul li img {
-  width: 25px;
-  height: 25px;
-  position: relative;
-  left: 10px;
-}
-
-#our-team .profiles .col .card-action ul li:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-}
-
 #jumpToTop a {
   background-color: #F26419 !important;
   opacity: 0.9;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #jumpToTop a i {
@@ -296,14 +326,14 @@ body {
 
 footer {
   background-color: #acb6cc;
-  height: 50px;
+  height: 60px;
   text-align: center;
 }
 
 footer p {
   color: #1D3557;
   font-size: 18px;
-  padding-top: 12px;
+  padding-top: 18px;
 }
 
 .fade {
