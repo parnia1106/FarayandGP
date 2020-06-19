@@ -65,7 +65,7 @@ body {
             height: 100%;
             top:0;
             bottom: -1px;
-            background-color: $main_text_color4;
+            background-color: $main_text_color1;
         }
         .bgTop {
             z-index: 15;
@@ -119,7 +119,7 @@ body {
 
             .bg{
                 margin-top: -20px;
-                background-image: url('Img/bg3.png'); 
+                background-image: url('Img/bg.png'); 
                 width:100%; 
                 height: 580px; 
                 background-size: cover;
@@ -129,10 +129,11 @@ body {
                 img{
                     width: 250px;
                     height: 250px;
+                    border-radius: 50%;
                 }
-                margin-top: 20px;
+                margin-top: 40px;
                 text-align: center;
-                color: $main_text_color1;
+                color: rgba(216, 212, 228, 0.973);
                 
                 p{
                     padding-top: 0px;
@@ -140,6 +141,7 @@ body {
 
                 h4{
                     font-weight: bold;
+                    
                 }
 
                 .typed-cursor{
@@ -147,27 +149,6 @@ body {
                 }
             }
     
-            .sm-icon {
-                padding-top: 12px;
-                margin-left: -10px;
-                ul{
-                    li{
-                        cursor: pointer;
-                        padding: 15px;
-                        display: inline-block;
-            
-                        img {
-                            width: 35px;
-                            height: 35px;
-
-                            &:hover{
-                                transform: scale(1.2);
-                                transition: 0.1s linear;
-                            }
-                        }
-                    }
-                }
-            }  
         }
     }
 }
@@ -179,21 +160,22 @@ body {
     .profiles {
         margin-top: 70px;
         text-align: center;
-        border-top: 1px solid #33658A;
-        width: 90%;
+        border-top: 2px solid $main_text_color3;
+        box-shadow: none !important;
+        width: 95%;
         padding: 50px;
         
 
         .header{
             display: flex;
-            justify-content: flex-start; 
-            margin-top: -100px;
+            justify-content: center; 
+            margin-top: -102px;
             width: 100%;
             margin-bottom: 30px;
     
             span{
-                padding: 27px;
-                font-size: 25px;
+                padding: 26px;
+                font-size: 29px;
                 color: $main_text_color3;
                 background-color: white;
             }
@@ -218,6 +200,7 @@ body {
 
             .card-content{
                 padding: 10px 20px;  
+                min-height: 140px;
             }
 
             .card-action{
@@ -231,7 +214,7 @@ body {
                     content: '';
                     height: 100%;
                     width: 7px;
-                    background-color: rgba(172, 182, 204, 0.603);
+                    background-color: #ff7b0085;
                     border-radius: 2px;
                     bottom: 0;
                     left: 0;
@@ -291,16 +274,43 @@ body {
 
 
 footer {
-    background-color: $main_text_color4;
-    height: 60px;
+    background-color: $main_text_color1;
     text-align: center;
 
+
+    .row{
+        margin: 0 !important;
+    }
+
+    .col{
+        padding: 0 !important;
+    }
+
+    .sm-icon {
+       margin-top: 20px;
+        ul{
+            li{
+                cursor: pointer;
+                display: inline-block;
+                padding-right: 15px;
     
+                img {
+                    width: 25px;
+                    height: 25px;
+
+                    &:hover{
+                        transform: scale(1.2);
+                        transition: 0.1s linear;
+                    }
+                }
+            }
+        }
+    }      
 
     p {
-        color: $main_text_color1;
-        font-size: 18px;
-        padding-top: 18px;
+        color: white;
+        font-size: 14px;
+        margin-top: 25px;
     }
 }
 
@@ -314,6 +324,9 @@ footer {
     #top-section{
 
         .main{
+            .waveWrapperInner{
+                height: 95vh;
+            }
             .contents{
                 .context{
                     img{
@@ -329,19 +342,7 @@ footer {
                     h3{
                         font-size: 28px;
                     }
-                }
-        
-                .sm-icon {
-                    ul{
-                        li{
-                
-                            img {
-                                width: 30px;
-                                height: 30px;
-                            }
-                        }
-                    }
-                }  
+                } 
             }
         }
     }
@@ -400,6 +401,12 @@ footer {
                 }
                      
             }
+        }
+    }
+
+    footer{
+        p{
+            font-size: 12px;
         }
     }
 
