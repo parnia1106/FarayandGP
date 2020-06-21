@@ -145,7 +145,6 @@ body {
 
 #top-section .main .contents .bg {
   margin-top: -20px;
-  background-image: url("Img/bg.png");
   width: 100%;
   height: 580px;
   background-size: cover;
@@ -228,11 +227,12 @@ body {
 #our-team .profiles .profile p {
   color: #33658A;
   font-size: 16px;
+  float: left;
 }
 
 #our-team .profiles .profile .card-content {
   padding: 10px 20px;
-  min-height: 140px;
+  min-height: 150px;
 }
 
 #our-team .profiles .profile .card-action {
@@ -240,6 +240,7 @@ body {
   padding: 0px 20px;
   text-align: center;
   height: 60px;
+  width: 100%;
 }
 
 #our-team .profiles .profile .card-action::before {
@@ -261,15 +262,25 @@ body {
   width: 100%;
 }
 
-#our-team .profiles .profile .card-action ul li {
-  display: inline-block;
+#our-team .profiles .profile .card-action ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #our-team .profiles .profile .card-action ul li img {
   width: 25px;
   height: 25px;
   position: relative;
-  left: 10px;
+  left: 12px;
 }
 
 #our-team .profiles .profile .card-action ul li:hover {
@@ -325,12 +336,12 @@ footer .sm-icon {
 footer .sm-icon ul li {
   cursor: pointer;
   display: inline-block;
-  padding-right: 15px;
+  padding-right: 12px;
 }
 
 footer .sm-icon ul li img {
-  width: 25px;
-  height: 25px;
+  width: 18px;
+  height: 18px;
 }
 
 footer .sm-icon ul li img:hover {
@@ -343,7 +354,7 @@ footer .sm-icon ul li img:hover {
 footer p {
   color: white;
   font-size: 14px;
-  margin-top: 25px;
+  margin-top: 22px;
 }
 
 .fade {
@@ -361,10 +372,10 @@ footer p {
     height: 180px;
   }
   #top-section .main .contents .context h4 {
-    font-size: 25px;
+    font-size: 23px;
   }
   #top-section .main .contents .context h3 {
-    font-size: 28px;
+    font-size: 25px;
   }
   #our-team .profiles {
     padding: 30px;
@@ -383,11 +394,11 @@ footer p {
   }
   #our-team .profiles .col h5 {
     color: #1D3557;
-    font-size: 21px;
+    font-size: 19px;
   }
   #our-team .profiles .col p {
     color: #33658A;
-    font-size: 17px;
+    font-size: 14px;
   }
   #our-team .profiles .col .card-content {
     padding: 10px 20px;
