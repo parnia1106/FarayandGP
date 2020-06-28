@@ -4,8 +4,28 @@
 }
 
 @font-face {
-  font-family: 'aldrich';
-  src: url("../fonts/Aldrich-Regular.woff2") format("woff2"), url("../fonts/Aldrich-Regular.woff") format("woff"), url("../fonts/Aldrich-Regular.ttf") format("ttf");
+  font-family: 'painter';
+  src: url("../fonts/Painter-LxXg.woff2") format("woff2"), url("../fonts/Painter-LxXg.woff") format("woff"), url("../fonts/Painter-LxXg.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'granite';
+  src: url("../fonts/Granite-Bgvl.woff2") format("woff2"), url("../fonts/Granite-Bgvl.woff") format("woff"), url("../fonts/Granite-Bgvl.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu-Bold.woff") format("woff"), url("../fonts/Ubuntu-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'titillium';
+  src: url("../fonts/TitilliumWeb-Bold.woff2") format("woff2"), url("../fonts/TitilliumWeb-Bold.woff") format("woff"), url("../fonts/TitilliumWeb-Bold.ttf") format("ttf");
 }
 
 html {
@@ -163,11 +183,12 @@ body {
 }
 
 #top-section .main .contents .context p {
-  padding-top: 0px;
+  padding-top: 1px;
 }
 
 #top-section .main .contents .context h4 {
-  font-weight: bold;
+  font-size: 45px;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 #top-section .main .contents .context .typed-cursor {
@@ -271,16 +292,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#our-team .profiles .profile .card-action ul li a {
+  margin-right: 0;
 }
 
 #our-team .profiles .profile .card-action ul li img {
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
   position: relative;
-  left: 12px;
 }
 
 #our-team .profiles .profile .card-action ul li:hover {
@@ -372,7 +395,7 @@ footer p {
     height: 180px;
   }
   #top-section .main .contents .context h4 {
-    font-size: 23px;
+    font-size: 25px;
   }
   #top-section .main .contents .context h3 {
     font-size: 25px;

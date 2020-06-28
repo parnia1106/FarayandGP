@@ -11,11 +11,44 @@ $main_text_color5: #F48923;
         url('../fonts/gilroy-medium-webfont.ttf') format('ttf');
 
 }
+
 @font-face {
-    font-family: 'aldrich';
-    src: url('../fonts/Aldrich-Regular.woff2') format('woff2'),
-        url('../fonts/Aldrich-Regular.woff') format('woff'),
-        url('../fonts/Aldrich-Regular.ttf') format('ttf');
+    font-family: 'painter';
+    src: url('../fonts/Painter-LxXg.woff2') format('woff2'),
+        url('../fonts/Painter-LxXg.woff') format('woff'),
+        url('../fonts/Painter-LxXg.ttf') format('ttf');
+
+}
+
+@font-face {
+    font-family: 'granite';
+    src: url('../fonts/Granite-Bgvl.woff2') format('woff2'),
+        url('../fonts/Granite-Bgvl.woff') format('woff'),
+        url('../fonts/Granite-Bgvl.ttf') format('ttf');
+
+}
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url('../fonts/Ubuntu-Bold.woff2') format('woff2'),
+        url('../fonts/Ubuntu-Bold.woff') format('woff'),
+        url('../fonts/Ubuntu-Bold.ttf') format('ttf');
+
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/Lato-Bold.woff2') format('woff2'),
+        url('../fonts/Lato-Bold.woff') format('woff'),
+        url('../fonts/Lato-Bold.ttf') format('ttf');
+
+}
+
+@font-face {
+    font-family: 'titillium';
+    src: url('../fonts/TitilliumWeb-Bold.woff2') format('woff2'),
+        url('../fonts/TitilliumWeb-Bold.woff') format('woff'),
+        url('../fonts/TitilliumWeb-Bold.ttf') format('ttf');
 
 }
 
@@ -135,13 +168,14 @@ body {
                 color: rgba(216, 212, 228, 0.973);
                 
                 p{
-                    padding-top: 0px;
+                    padding-top: 1px;
                 }
 
                 h4{
-                    font-weight: bold;
-                    
+                    font-size: 45px;
+                    font-family: 'Titillium Web', sans-serif;
                 }
+                
 
                 .typed-cursor{
                     display: none;
@@ -230,15 +264,19 @@ body {
                     width: 100%;
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-between;
+                    justify-content: space-around;
 
                     li{
+
+                        a{
+                            margin-right: 0;
+                        }
                         
                         img{
-                            width: 25px;
-                            height: 25px;
+                            width: 26px;
+                            height: 26px;
                             position: relative;
-                            left: 12px;
+                            
                         }
 
                         &:hover{
@@ -339,7 +377,7 @@ footer {
         
                     h4{
                         
-                        font-size: 23px;
+                        font-size: 25px;
                     }
         
                     h3{
